@@ -1,0 +1,52 @@
+{
+  "intents": [
+    {
+      "intent": "run_script",
+      "slots": [
+        {
+          "name": "script_name",
+          "type": "string"
+        },
+        {
+          "name": "platform",
+          "type": "string"
+        },
+        {
+          "name": "environment",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "intent": "describe_code",
+      "slots": [
+        {
+          "name": "code_snippet",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity": "platform",
+      "values": [
+        "Android",
+        "limited resources",
+        "secure environment",
+        "sandbox environment",
+        "private cloud",
+        "custom hardware",
+        "regulated environment"
+      ]
+    },
+    {
+      "entity": "environment",
+      "values": [
+        "free",
+        "premium",
+        "enterprise"
+      ]
+    }
+  ]
+}
