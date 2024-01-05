@@ -1,7 +1,8 @@
 repo_name: Or4cl3AI/PythoniZerAI-
 report_id: '08ad9b8e444d382b54709d0f181944d6'
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-24T01:56:13+00:00'
+timestamp: '2024-01-05T08:34:26+00:00'
 requested_by: Or4cl3AI
 provider: github
 branch: main
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-
   detection_source: Repo Metadata
 - name: FastAPI
   description: A high performance, easy to learn, fast to code, ready for production
@@ -27,6 +29,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Microframeworks (Backend)
   image_url: https://img.stackshare.io/service/25014/default_f6ff39141b468e832d1bc59fc98a060df604d44d.png
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
@@ -38,6 +41,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-
   detection_source: Repo Metadata
 - name: PyPI
   description: A repository of software for the Python programming language
@@ -47,6 +51,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Hosted Package Repository
   image_url: https://img.stackshare.io/service/12572/-RIWgodF_400x400.jpg
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
@@ -60,7 +65,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/4586/Lu99Qe0Z_400x400.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
@@ -74,7 +79,7 @@ tools:
   category: Libraries
   sub_category: Data Science Tools
   image_url: https://img.stackshare.io/service/2179/default_332f874a2edb2686f578aa6389313efcea1eec41.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
@@ -88,13 +93,13 @@ tools:
   category: Application Utilities
   sub_category: Machine Learning Tools
   image_url: https://img.stackshare.io/service/4717/FtFnqC38_400x400.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: aiohttp
   description: Async http client/server framework
-  package_url: https://pypi.org/aiohttp
+  package_url: https://pypi.org/project/aiohttp
   version: 3.7.4
   license: Apache-2.0
   open_source: true
@@ -102,11 +107,29 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19852/default_d748224707283d9d8a73c2323730c87bda6b313a.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
   vulnerabilities:
+  - name: aiohttp's ClientSession is vulnerable to CRLF injection via version
+    cve_id: CVE-2023-49081
+    cve_url: https://github.com/advisories/GHSA-q3qx-c6g2-7pw2
+    detected_date: Nov 28
+    severity: high
+    first_patched: 3.9.0
+  - name: aiohttp has vulnerable dependency that is vulnerable to request smuggling
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-pjjw-qhg8-p2p9
+    detected_date: Nov 29
+    severity: moderate
+    first_patched: 3.8.6
+  - name: aiohttp's ClientSession is vulnerable to CRLF injection via method
+    cve_id: CVE-2023-49082
+    cve_url: https://github.com/advisories/GHSA-qvrw-v9rv-5rjx
+    detected_date: Nov 28
+    severity: moderate
+    first_patched: 3.9.0
   - name: AIOHTTP has problems in HTTP parser (the python one, not llhttp)
     cve_id: CVE-2023-47627
     cve_url: https://github.com/advisories/GHSA-gfw2-4jvh-wgfg
@@ -135,7 +158,7 @@ tools:
     first_patched: 3.8.0
 - name: aiosmtplib
   description: Asyncio SMTP client
-  package_url: https://pypi.org/aiosmtplib
+  package_url: https://pypi.org/project/aiosmtplib
   version: 1.1.6
   license: MIT
   open_source: true
@@ -143,13 +166,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/pypi/image.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: certifi
   description: Python package for providing Mozilla's CA Bundle
-  package_url: https://pypi.org/certifi
+  package_url: https://pypi.org/project/certifi
   version: 2021.5.30
   license: MPL-2.0
   open_source: true
@@ -157,7 +180,7 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19849/default_75c38a39b9f0062814489e2ec2cbfca0ca15d9ba.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
@@ -176,7 +199,7 @@ tools:
     first_patched: 2022.12.07
 - name: cffi
   description: Foreign Function Interface for Python calling C code
-  package_url: https://pypi.org/cffi
+  package_url: https://pypi.org/project/cffi
   version: 1.14.6
   license: MIT
   open_source: true
@@ -184,13 +207,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19909/default_67f813d4aac73d024261bcfded6ef2b918e384a0.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: chardet
   description: Universal encoding detector for Python 2 and 3
-  package_url: https://pypi.org/chardet
+  package_url: https://pypi.org/project/chardet
   version: 4.0.0
   license: LGPL-2.1
   open_source: true
@@ -198,14 +221,14 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19856/default_4a8a8fdc10130068bf295812b98e9b72fb42fe70.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: cryptography
   description: Cryptography is a package which provides cryptographic recipes and
     primitives to Python developers
-  package_url: https://pypi.org/cryptography
+  package_url: https://pypi.org/project/cryptography
   version: 3.4.8
   license: BSD-3-Clause,Apache-2.0
   open_source: true
@@ -213,7 +236,7 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19850/default_db2ab2702f70e20c272f6ce65251108fb2b8f1ea.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
@@ -231,12 +254,12 @@ tools:
     detected_date: Feb 8
     severity: moderate
     first_patched: 39.0.1
-  - name: Vulnerable OpenSSL included in cryptography wheels
-    cve_id: 
-    cve_url: https://github.com/advisories/GHSA-5cpq-8wj7-hf2v
-    detected_date: Jun 3
-    severity: low
-    first_patched: 41.0.0
+  - name: cryptography vulnerable to NULL-dereference when loading PKCS7 certificates
+    cve_id: CVE-2023-49083
+    cve_url: https://github.com/advisories/GHSA-jfhm-5ghh-2f97
+    detected_date: Nov 29
+    severity: moderate
+    first_patched: 41.0.6
   - name: pyca/cryptography's wheels include vulnerable OpenSSL
     cve_id: 
     cve_url: https://github.com/advisories/GHSA-jm77-qphf-c4w8
@@ -249,9 +272,15 @@ tools:
     detected_date: Sep 22
     severity: low
     first_patched: 41.0.4
+  - name: Vulnerable OpenSSL included in cryptography wheels
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-5cpq-8wj7-hf2v
+    detected_date: Jun 3
+    severity: low
+    first_patched: 41.0.0
 - name: gunicorn
   description: WSGI HTTP Server for UNIX
-  package_url: https://pypi.org/gunicorn
+  package_url: https://pypi.org/project/gunicorn
   version: 20.1.0
   license: MIT
   open_source: true
@@ -259,13 +288,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19931/default_74a0c20721d3a0a1484d69586401591fe8993db2.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: idna
   description: Internationalized Domain Names in Applications
-  package_url: https://pypi.org/idna
+  package_url: https://pypi.org/project/idna
   version: '3.2'
   license: BSD-3-Clause
   open_source: true
@@ -273,13 +302,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19863/default_f24e00e4cb7620e436f9d06e0305070e1335922a.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: jsonschema
   description: An implementation of JSON Schema validation for Python
-  package_url: https://pypi.org/jsonschema
+  package_url: https://pypi.org/project/jsonschema
   version: 3.2.0
   license: MIT
   open_source: true
@@ -287,13 +316,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19854/default_3fbfa1d88b4408e903227ac391490e8efb8dea58.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: nltk
   description: Natural Language Toolkit
-  package_url: https://pypi.org/nltk
+  package_url: https://pypi.org/project/nltk
   version: 3.6.2
   license: Apache-2.0
   open_source: true
@@ -301,7 +330,7 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/20023/default_b0d1a54f127d7017fce41c15f5e85568fb7019ed.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
@@ -326,7 +355,7 @@ tools:
     first_patched: 3.6.4
 - name: pandas
   description: Powerful data structures for data analysis
-  package_url: https://pypi.org/pandas
+  package_url: https://pypi.org/project/pandas
   version: 1.3.3
   license: BSD-3-Clause
   open_source: true
@@ -334,13 +363,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19837/default_85689b353a3a9409328e253ea28d859d29151e0c.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: passlib
   description: Comprehensive password hashing framework supporting over 30 schemes
-  package_url: https://pypi.org/passlib
+  package_url: https://pypi.org/project/passlib
   version: 1.7.4
   license: BSD-3-Clause
   open_source: true
@@ -348,13 +377,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19992/default_aa5b3e77340c2bb80cd8e6a59cd82909abcdcd63.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: pyOpenSSL
   description: Python wrapper module around the OpenSSL library
-  package_url: https://pypi.org/pyOpenSSL
+  package_url: https://pypi.org/project/pyOpenSSL
   version: 20.0.1
   license: Apache-2.0
   open_source: true
@@ -362,13 +391,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19873/default_7ed3c4ccf2a3218ae3655165b980bd4a90a445dc.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: pycparser
   description: C parser in Python
-  package_url: https://pypi.org/pycparser
+  package_url: https://pypi.org/project/pycparser
   version: '2.20'
   license: BSD-3-Clause
   open_source: true
@@ -376,13 +405,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/20072/default_d7fc4eabe57370d13c2a8ad2f7f6bb876c96c66d.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: pycryptodome
   description: Cryptographic library for Python
-  package_url: https://pypi.org/pycryptodome
+  package_url: https://pypi.org/project/pycryptodome
   version: 3.10.1
   license: BSD-3-Clause,Unlicense,Apache-2.0
   open_source: true
@@ -390,13 +419,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19900/default_4f4fb10b6f169603a907dcb35a5a356d784e3bd3.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: pycryptodomex
   description: Cryptographic library for Python
-  package_url: https://pypi.org/pycryptodomex
+  package_url: https://pypi.org/project/pycryptodomex
   version: 3.10.1
   license: BSD-3-Clause,Unlicense,Apache-2.0
   open_source: true
@@ -404,13 +433,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/20058/default_b08738f5cbfb89e72f22150df888a7e1df34c927.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: pydantic
   description: Data validation and settings management using python 3.6 type hinting
-  package_url: https://pypi.org/pydantic
+  package_url: https://pypi.org/project/pydantic
   version: 1.8.2
   license: MIT
   open_source: true
@@ -418,13 +447,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/20022/default_b0d1a54f127d7017fce41c15f5e85568fb7019ed.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: python-dateutil
   description: Extensions to the standard Python datetime module
-  package_url: https://pypi.org/python-dateutil
+  package_url: https://pypi.org/project/python-dateutil
   version: 2.8.2
   license: NRL
   open_source: true
@@ -432,13 +461,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19833/default_58dbe7b4d7ec447b62773209af0f9a31bbabf5bd.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: python-decouple
   description: Strict separation of settings from code
-  package_url: https://pypi.org/python-decouple
+  package_url: https://pypi.org/project/python-decouple
   version: '3.5'
   license: MIT
   open_source: true
@@ -446,13 +475,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/20545/default_7b61da87043cab6a451d00283941da078ee5c9d9.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: python-dotenv
   description: Add .env support to your django/flask apps in development and deployments
-  package_url: https://pypi.org/python-dotenv
+  package_url: https://pypi.org/project/python-dotenv
   version: 0.19.0
   license: BSD-3-Clause
   open_source: true
@@ -460,13 +489,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/20095/default_3141eabecdd8efa55de73a33c43f2ac0d5bbf954.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: python-engineio
   description: Engine.IO server
-  package_url: https://pypi.org/python-engineio
+  package_url: https://pypi.org/project/python-engineio
   version: 4.2.1
   license: MIT
   open_source: true
@@ -474,13 +503,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/pypi/image.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: python-jose
   description: JOSE implementation in Python
-  package_url: https://pypi.org/python-jose
+  package_url: https://pypi.org/project/python-jose
   version: 3.3.0
   license: MIT
   open_source: true
@@ -488,13 +517,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/20096/default_5297f13e5d732665caff8f16d9bfcd71481f98b6.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: python-socketio
   description: Socket.IO server
-  package_url: https://pypi.org/python-socketio
+  package_url: https://pypi.org/project/python-socketio
   version: 5.4.0
   license: MIT
   open_source: true
@@ -502,13 +531,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/20330/default_cf6b540611cb9b9b5d016a661f54f50ad3400f1a.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: pytz
   description: World timezone definitions, modern and historical
-  package_url: https://pypi.org/pytz
+  package_url: https://pypi.org/project/pytz
   version: '2021.1'
   license: MIT
   open_source: true
@@ -516,13 +545,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19841/default_bb711fa267b2329ed689711a5adb7d9e74610b20.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: requests
   description: Python HTTP for Humans
-  package_url: https://pypi.org/requests
+  package_url: https://pypi.org/project/requests
   version: 2.26.0
   license: Apache-2.0
   open_source: true
@@ -530,7 +559,7 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19826/default_d7c684bf2673f008a9f02ac93901229297a22d7e.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
@@ -543,7 +572,7 @@ tools:
     first_patched: 2.31.0
 - name: scikit-learn
   description: A set of python modules for machine learning and data mining
-  package_url: https://pypi.org/scikit-learn
+  package_url: https://pypi.org/project/scikit-learn
   version: 0.24.2
   license: BSD-3-Clause
   open_source: true
@@ -551,13 +580,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19898/default_4343f8bba4f6051641ffca8b4fbe9b099402c84d.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: six
   description: Python 2 and 3 compatibility utilities
-  package_url: https://pypi.org/six
+  package_url: https://pypi.org/project/six
   version: 1.16.0
   license: MIT
   open_source: true
@@ -565,13 +594,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19827/default_74a61b43bdb9fc0cba2978316b9976f43545029b.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
 - name: urllib3
   description: HTTP library with thread-safe connection pooling
-  package_url: https://pypi.org/urllib3
+  package_url: https://pypi.org/project/urllib3
   version: 1.26.6
   license: MIT
   open_source: true
@@ -579,7 +608,7 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19842/default_4604ff5dcb7f4d9c7b3833591c2142493951b19c.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
@@ -599,7 +628,7 @@ tools:
     first_patched: 1.26.17
 - name: uvicorn
   description: The lightning-fast ASGI server
-  package_url: https://pypi.org/uvicorn
+  package_url: https://pypi.org/project/uvicorn
   version: 0.15.0
   license: BSD-3-Clause
   open_source: true
@@ -607,7 +636,7 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/20431/default_f824837db22536768ec317b67275fa384fad7d47.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Or4cl3AI/PythoniZerAI-/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: e2b-for-github[bot]
   last_updated_on: 2023-07-24 05:34:03.000000000 Z
